@@ -1,66 +1,58 @@
 // pages/home/home.js
+const App = new getApp()
+console.log(App.globalData.name);
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    name: '哈哈哈',
+    age: 18,
+    students: [
+      {id: 1,name: '123',age: 18},
+      {id: 2,name: '1234',age: 19},
+      {id: 3,name: '12345',age: 20},
+      {id: 4,name: '123456',age: 21}
+    ],
+    counter: 0,
+    list: [],
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad(){
+    wx.request({
+      url: 'http://152.136.185.210:8000/api/n3/recommend',
+      success: res=>{
+        console.log(res);
+        const data = res.data.data.list;
+        this.setData({
+          list: data
+        })
+        
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handBtnClick1(){
+    this.setData({      
+      counter: this.data.counter + 1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handBtnClick2(){
+    console.log('点击-');
+    this.setData({
+      counter: this.data.counter - 1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handleUserInfo(event){
+    console.log(event);
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  // 监听页面滚动
+  onPageScroll(obj){
+    // console.log(obj);
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  // 监听页面滚动到底部
+  onReachBottom(){
+    console.log('页面滚动到底部');
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onPullDownRefresh(){
+    console.log('下拉加载更多');
+    
   }
+
 })
