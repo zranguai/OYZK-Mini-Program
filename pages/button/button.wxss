@@ -1,0 +1,5 @@
+/* pages/button/button.wxss */
+.hc {
+  background-color: red;
+  color: white;
+}

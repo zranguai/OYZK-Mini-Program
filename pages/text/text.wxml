@@ -1,0 +1,11 @@
+<!--pages/text/text.wxml-->
+<!-- 文本是否可选 -->
+<text selectable="true">哈哈哈</text>
+<text selectable="true">呵呵呵</text>
+
+<!-- 显示连续空格 -->
+<text>酷酷酷 酷酷酷\n</text>
+<text space="emsp">酷酷酷 酷酷酷\n</text>
+<text space="ensp">酷酷酷 酷酷酷\n</text>
+<!-- 是否解码 -->
+<text decode>5 &amp; 3</text>
