@@ -1,0 +1,12 @@
+<!--pages/image/image.wxml-->
+<!-- 1.基本使用 -->
+<image src="https://res.wx.qq.com/wx当图片载入完毕时触发doc/dist/assets/img/0.4cb08bb4.jpg"></image>
+<image class="top" mode="top" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+<!-- 2.开启长按图片显示识别小程序码菜单 -->
+<image show-menu-by-longpress='true' src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+<!-- 3.点击上传图片 -->
+<!-- <button bindtap="upimage">按钮</button> -->
+<!-- <image src="{{list[0]}}"></image> -->
+<!-- 4.当图片载入完毕时触发 -->
+<image bindload="bl" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+

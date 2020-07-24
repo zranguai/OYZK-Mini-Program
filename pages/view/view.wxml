@@ -1,0 +1,18 @@
+<!--pages/view/view.wxml-->
+<!-- 1.基本使用 -->
+<view>哈哈哈</view>
+<view>哈哈哈</view>
+<!-- 2.指定按下去的样式类 -->
+<view class="ve" 
+      hover-class="hc"
+      hover-start-time='{{600}}'
+      hover-stay-time='{{1000}}'>嘿嘿嘿</view>
+<!-- 3.指定是否阻止本节点的祖先节点出现点击态 -->
+<view class="parent" hover-class="parent-hc">
+  <view class="ve" 
+      hover-class="hc"
+      hover-start-time='{{600}}'
+      hover-stay-time='{{1000}}'
+      hover-stop-propagation>嘿嘿嘿</view>
+
+</view>

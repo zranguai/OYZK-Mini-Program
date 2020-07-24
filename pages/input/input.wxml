@@ -1,0 +1,11 @@
+<!--pages/input/input.wxml-->
+<!-- 1.基本使用 -->
+<input></input>
+<!-- 2.input 的类型 -->
+<input type="number"></input>
+<!-- 3.输入框为空时占位符 -->
+<input placeholder-class="ph" placeholder="请输入内容"></input>
+<!-- 4.input事件 -->
+<input bindinput="bininp"
+       bindfocus="binfoc"
+       bindblur="binblu"></input>

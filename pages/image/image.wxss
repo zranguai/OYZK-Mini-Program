@@ -1,0 +1,5 @@
+/* pages/image/image.wxss */
+.top {
+  width: 100px;
+  height: 100px;
+}
