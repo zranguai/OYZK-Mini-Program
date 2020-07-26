@@ -1,0 +1,14 @@
+<!--pages/wxss/wxss.wxml-->
+<!-- <view>{{nowtime}}</view> -->
+<button size="mini" bindtap="changeColor">改变颜色</button>
+<view class=" box {{isActive ? 'active': ''}}">哈哈哈哈哈哈</view>
+<!-- <map longitude="116.2" 
+     latitude="36.2"
+     show-compass ></map> -->
+     
+<block class="blc">哈哈哈</block>
+<view class="blc"cxc>嘿嘿嘿</view>
+<view class="cheshi">
+     123456黑呵呵
+</view>
+  

@@ -1,0 +1,9 @@
+<!-- <view class="tit">
+  {{title}}
+</view>
+<view>
+  {{content}}
+</view>
+   -->
+<button size="mini" bind:tap="handleIncrease">按钮</button>
+  

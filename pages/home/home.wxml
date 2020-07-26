@@ -1,3 +1,45 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+<my-cpnn></my-cpnn>
+<my-cpnn/>
+<view>
+  -------------------
+</view>
+<!-- <my-prop title="哈哈哈哈123" tit="red"></my-prop>
+<my-prop content="嘿嘿嘿456" /> -->
+  <view>
+    ------------------------
+  </view>
+  <view>
+    当前计数为： {{counter}}
+  </view>
+  <my-prop bind:handleIncrease="handlemycpn"/>
+  <view>
+    -----------tabcontrol------------
+  </view>
+  <z-tab-control titles="{{['apple','iphone','xiaomi']}}"
+                 bind:handleTab="handleBtnClick"></z-tab-control>
+
+<view>
+  -------------my-sel------------
+</view>
+<my-sel class="sel"/>
+<button size="mini" bind:tap="handleBtn" >增加</button>
+<view>
+  -----------my-slot-------------
+</view>
+<my-slot>
+  <button size="mini" slot="slot1">哈哈哈哈</button>
+  <slider slot="slot2" value="20"></slider>
+</my-slot>
+<my-slot>
+  <slider value="60" slot='slot2'></slider>
+</my-slot>
+
+  
+  
+  
+    
+
+    

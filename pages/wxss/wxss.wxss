@@ -1,0 +1,13 @@
+/* pages/wxss/wxss.wxss */
+.box {
+  font-size: 64rpx;
+}
+.active {
+  color: pink;
+}
+.blc {
+  color: red;
+}
+.cheshi {
+  color: pink;
+}

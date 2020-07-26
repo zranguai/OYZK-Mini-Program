@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/home/home",
+    "pages/home/home", 
+    "pages/wxss/wxss",
+    "pages/tabbar/tabbar",
+    "pages/seachbar/seachbar",
     "pages/about/about"
   ]
 }

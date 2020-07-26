@@ -1,0 +1,4 @@
+<view>
+  当前计数： {{counter}}
+</view>
+  

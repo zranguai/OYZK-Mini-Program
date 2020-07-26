@@ -1,0 +1,19 @@
+.tab-bar {
+  display: flex;
+  /* height: 88px; 
+  line-height: 88px; */
+  text-align: center;
+  /* background-color: pink; */
+  margin-bottom: 10px;
+}
+.tab-bar-item {
+  flex: 1;
+}
+
+.active {
+  color: red;
+}
+.active text {
+  padding: 20rpx 16rpx;
+  border-bottom: 6rpx solid pink;
+}

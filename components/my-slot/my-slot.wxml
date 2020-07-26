@@ -1,0 +1,10 @@
+<view>
+  我是头部
+</view>
+<slot name="slot1"></slot>
+<slot name="slot2"></slot>
+<view>
+  我是尾部
+</view>
+  
+  

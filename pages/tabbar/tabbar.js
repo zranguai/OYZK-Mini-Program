@@ -1,30 +1,11 @@
-// pages/home/home.js
+// pages/tabbar/tabbar.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    counter: 0
-  },
-  handlemycpn(){
-    console.log('------');
-    this.setData({
-      counter: this.data.counter += 1
-    })
-  },
-  handleBtnClick(event){
-    console.log(event);
-  },
-  handleBtn(){
-    const dat = this.selectComponent('.sel');
-    console.log(dat);
-    // 方法1
-    // dat.setData({
-    //   counter: dat.data.counter + 20
-    // })
-    // 方法二
-    dat.incrementCounter(10)
+
   },
 
   /**
