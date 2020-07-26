@@ -1,3 +1,9 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+<navigator url="/pages/detail/detail">跳到详情页</navigator>
+<navigator url="/pages/about/about" open-type="switchTab">跳到关于</navigator>
+<!-- 3.跳转过程中传递数据 -->
+<navigator url="/pages/detail/detail?name=zs&age=18&height=1.88">跳到详情页123</navigator>
+<view>{{title}}</view>
+<button bindtap="handleDetail">跳转到detail</button>

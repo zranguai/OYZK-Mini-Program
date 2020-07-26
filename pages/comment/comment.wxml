@@ -1,0 +1,3 @@
+<!--pages/comment/comment.wxml-->
+<text>pages/comment/comment.wxml</text>
+<navigator open-type="navigateBack" delta="2">返回</navigator>
