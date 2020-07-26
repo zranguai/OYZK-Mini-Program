@@ -7,60 +7,48 @@ Page({
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleShowToast(){
+    wx.showToast({
+      title: '你好啊',
+      icon: 'loading',
+      duration: 2000,
+      mask: true,
+      success: res=> {
+        console.log('调用成功');
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleShowModal(){
+    wx.showModal({
+      title: '我是标题',
+      content: '我是内容',
+      cancelText: '后退',
+      success: res=> {
+        console.log(res.confirm);
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handleShowLoading(){
+    wx.showLoading({
+      title: 'loading...',
+    }),
+    setTimeout(()=>{
+      wx.hideLoading()
+    },2000)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handleActionSheet(){
+    wx.showActionSheet({
+      itemList: ['好好','学习'],
+      success: res=>{
+        console.log(res.tapIndex);
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  onShareAppMessage(options){
+    return {
+      title: '你好啊',
+      path: '/pages/home/home',
+      imageUrl: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595767115771&di=f7fe6cae2cf5f3b004611c8798124804&imgtype=0&src=http%3A%2F%2Ft7.baidu.com%2Fit%2Fu%3D378254553%2C3884800361%26fm%3D79%26app%3D86%26f%3DJPEG%3Fw%3D1280%26h%3D2030'
+    }
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
